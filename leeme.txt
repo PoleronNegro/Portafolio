@@ -1,0 +1,2 @@
+para activar el entorno en su pc, debe llevar esta carpeta al dico C:/ luego modificar dentro de la carpeta "env" 
+el archivo pyvenv.cfg, modificando el nombre del usuario que esta accediendo a este entorno.
