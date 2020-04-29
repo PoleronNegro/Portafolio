@@ -1,0 +1,102 @@
+<section class="content">
+    <div class="row">
+        <div class="col-xs-12">
+            <div class="box">
+                <div class="box-header">
+                    <table id="tblTitulo1" class="table1" width="100%">
+                      <tr>
+                        <td>
+                          <h2><b>&nbsp;&nbsp;Habitacion</b></h2></td>
+                      </tr>
+                    </table>
+<hr>
+					<div class="container_table box-title table-responsive" style="width: 100%">
+					  <form class="form-horizontal well" id="forms-registro">
+              <div class="form-group">
+   							  <label class="col-sm-3 control-label" for="input01">Habitacion_id</label>
+   							  <div class="col-sm-3">
+   								  <input notnull="" title="Código" type="text" class="input-large required " id="txId" name="txId" maxlength="10" value="0">
+   							  </div>
+   						  </div>
+
+						  <div class="form-group">
+   							  <label class="col-sm-3 control-label" for="input01">Valor habitacion</label>
+   							  <div class="col-sm-3">
+   								  <input notnull="" title="Código" type="text" class="input-large required " id="txvalor" name="txCodigo" maxlength="10" value="0">
+   							  </div>
+   						  </div>
+						  <div class="form-group">
+							  <label class="col-sm-3 control-label" for="input01">Capacidad <br>Habitacion</label>
+							  <div class="col-sm-3">
+								  <input notnull="" title="Descripción" type="text" class="input-large required " id="txcapacidad" name="txDescrip" maxlength="100" value="0">
+							  </div>
+						  </div>
+						 <div class="form-group">
+   							  <label class="col-sm-3 control-label" for="input01">Baños</label>
+   							  <div class="col-sm-3">
+   								  <input notnull="" title="Valor" type="text" class="input-large required " id="txbaños" name="txbaños" maxlength="100" value="0">
+   							  </div>
+                 </div>
+              <div class="form-group">
+   							  <label class="col-sm-3 control-label" for="input01">Dormitorios</label>
+   							  <div class="col-sm-3">
+   								  <input notnull="" title="Valor" type="text" class="input-large required " id="txdorm" name="txdorm" maxlength="100" value="0">
+   							  </div>
+                 </div>
+              <div class="form-group">
+   							  <label class="col-sm-3 control-label" for="input01">Tamaño (M2)</label>
+   							  <div class="col-sm-3">
+   								  <input notnull="" title="Valor" type="text" class="input-large required " id="txtam" name="txtam" maxlength="100" value="0">
+   							  </div>
+   						  </div>
+             <div class="form-group">
+               <label class="col-sm-3 control-label" for="input01">Tipo<br>Habitacion</label>
+               <div class="col-sm-3">
+               <select notnull="" title="Identificador de la Empresa" id="cbtipohab" name="cbtipohab" class="form-combo" style="width: 350px;">
+               <option value="1">Single Room</option>
+               <option value="2">Dual cama</option>
+               <option value="3">Quadra kill</option>
+               </select>
+               </div>
+            </div>
+						 <div class="form-actions">
+			 			  <table width="100%" border="0"><tbody><tr><td width="100%" align="right">
+         <button type="button" name="btLeer"  id="btLeer" align="right" class="btn  btn-success" onclick="javascript:jsHabitacion.fuLeer();"><i class="fa fa-floppy-save"></i> Leer</button>
+         <button type="button" name="btActualizar"  id="btActualizar" align="right" class="btn  btn-success" onclick="javascript:jsHabitacion.fuActualizar();"><i class="fa fa-floppy-save"></i> Actualizar</button>
+         <button type="button" name="btInsertar"  id="btInsertar" align="right" class="btn  btn-success" onclick="javascript:jsHabitacion.fuInsertar();"><i class="fa fa-floppy-save"></i> Insertar</button>
+         <button type="button" name="btEliminar"  id="btEliminar" align="right" class="btn  btn-danger" onclick="javascript:jsHabitacion.fuEliminar();"><i class="fa fa-floppy-save"></i> Eliminar</button>
+         <button type="button" name="btCancelar"  id="btCancelar" align="right" class="btn  btn-success" onclick="javascript:jsHabitacion.fuCancelar();"><i class="fa fa-floppy-save"></i> Cancelar</button>
+         <button type="button" name="btListar"  id="btListar" align="right" class="btn  btn-success" onclick="javascript:jsHabitacion.listarProductos();"><i class="fa fa-floppy-save"></i> Listar</button>
+			 			  </td></tr></tbody></table>
+
+			 			</div>
+
+						  </form>
+					  </div>
+
+<!-- **************************************************************************-->
+
+            <div class="container_table box-title table-responsive" style="width: 100%">
+              <form class="form-horizontal well" id="forms-registro">
+            <table id="tabla" class="table table-dark table-striped table-bordered dt-responsive nowrap" style="width:100%">
+              <thead>
+               <tr>
+                 <th data-field="habitacion_id">ID HABITACION</th>
+                 <th data-field="valorhab">$Valor</th>
+                 <th data-field="capacidad_hab">Capacidad</th>
+                 <th data-field="tamañom2">Tamaño (M2)</th>
+                 <th data-field="baños">Baños</th>
+                 <th data-field="dormitorios">Dormitorios</th>
+
+               </tr>
+             </thead>
+            </table>
+          </form>
+        </div>
+<!-- **************************************************************************-->
+
+  </div>
+</div>
+</div>
+</div>
+</section>
