@@ -1,11 +1,11 @@
+{# Archivos #}
+{% load static %} <!-- STATIC_URL -->
 <!DOCTYPE html>
 <html>
 <head>
-      {# Archivos #}
-      {% load static %} <!-- STATIC_URL -->
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Hostal Doña Clarita - Admin </title>
+  <title>Hostal Doña Clarita - Empleados </title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Font Awesome -->
@@ -55,7 +55,7 @@
     <a href="index3.html" class="brand-link">
       <img src="{% static '/dist/img/AdminLTELogo.png' %}" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
            style="opacity: .8">
-      <span class="brand-text font-weight-light">Administrador</span>
+      <span class="brand-text font-weight-light">Empleados</span>
     </a>
 
     <!-- Sidebar -->
@@ -66,7 +66,7 @@
           <img src="{% static '/dist/img/user2-160x160.jpg' %}" class="img-circle elevation-2" alt="User Image">
         </div>
         <div class="info">
-          <a href="#" class="d-block">Juan Perez</a>
+          <a href="#" class="d-block">Jose Algarriaga</a>
         </div>
       </div>
 
@@ -75,129 +75,57 @@
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
-          <li class="nav-item has-treeview animated-dropdown-menu">
-            <a href="#" class="nav-link pace-inactive">
-              <i class="nav-icon fas ion-android-bus"></i>
-              <p>
-                Usuarios
-                <i class="right fas fa-angle-left"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="javascript:ventana.showHTML('recargado','/habitacion');" class="nav-link nav-item">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Admin Usuarios</p>
-                </a>
-                
-              </li>
-              
-            </ul>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="#" class="nav-link pace-inactive">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Listado Usuarios</p>
-                </a>
-              </li>
-              
-            </ul>
-          </li>
-          
-          <li class="nav-item has-treeview animated-dropdown-menu">
-            <a href="#" class="nav-link pace-inactive">
-              <i class="nav-icon fas ion-android-home"></i>
-              <p>
-                Habitaciones
-                <i class="right fas fa-angle-left"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="#" class="nav-link pace-inactive">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Admin Habitaciones</p>
-                </a>
-              </li>
-              
-            </ul>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="#" class="nav-link pace-inactive">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Listado Habitaciones</p>
-                </a>
-              </li>
-              
-            </ul>
-          </li>
-          
-          <li class="nav-item has-treeview animated-dropdown-menu">
-            <a href="#" class="nav-link pace-inactive">
-              <i class="nav-icon fas ion-android-person"></i>
-              <p>
-                Empleados
-                <i class="right fas fa-angle-left"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="#" class="nav-link pace-inactive">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Admin Empleado</p>
-                </a>
-              </li>
-              
-            </ul>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="#" class="nav-link pace-inactive">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Listado Empleados</p>
-                </a>
-              </li>
-              
-            </ul>
-          </li>
-          
-          <li class="nav-item has-treeview animated-dropdown-menu">
-            <a href="#" class="nav-link pace-inactive">
-              <i class="nav-icon fas ion-pie-graph"></i>
-              <p>
-                Informes
-                <i class="right fas fa-angle-left"></i>
-              </p>
-            </a>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="#" class="nav-link pace-inactive">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Pedidos</p>
-                </a>
-              </li>
-              
-            </ul>
-            <ul class="nav nav-treeview">
-              <li class="nav-item">
-                <a href="#" class="nav-link pace-inactive">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Productos</p>
-                </a>
-              </li>
-              
-            </ul>
-          </li>
-          
+            <li class="nav-item has-treeview animated-dropdown-menu">
+              <a href="#" class="nav-link pace-inactive">
+                <i class="nav-icon fas ion-android-bus"></i>
+                <p>Menu Empleado<i class="right fas fa-angle-left"></i></p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="javascript:ventana.showHTML('recargado','/Empresas');" class="nav-link nav-item">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Empresas</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="javascript:ventana.showHTML('recargado','/Productos');" class="nav-link nav-item">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Productos</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="javascript:ventana.showHTML('recargado','/Huespedes');" class="nav-link nav-item">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Huespedes</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="javascript:ventana.showHTML('recargado','/Proveedores');" class="nav-link nav-item">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Proveedores</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="javascript:ventana.showHTML('recargado','/Pedidos');" class="nav-link nav-item">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Pedidos</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="javascript:ventana.showHTML('recargado','/Contratos');" class="nav-link nav-item">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Contratos</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
         </ul>
       </nav>
       <!-- /.sidebar-menu -->
     </div>
     <!-- /.sidebar -->
   </aside>
-
-
   <!-- Nuevo contenido -->
-  
   <div class="content-wrapper">
 
     <aside class="right-side">
@@ -207,13 +135,8 @@
 
         </div>
       </section>
-
-    </aside><!-- /.right-side -->
-
+    </aside>
   </div>
-  
-    
-  
 
   <!-- /.content-wrapper -->
   <footer class="main-footer">
