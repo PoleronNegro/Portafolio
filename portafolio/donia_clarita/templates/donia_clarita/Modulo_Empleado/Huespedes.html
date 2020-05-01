@@ -44,7 +44,7 @@
             </div>
         </div>
         <div class="form-group col-lg-6 col-md-6 col-sm-12 col-xs-12" style="text-align:justify;margin-top: 10px;margin-bottom: 10px;">
-          <label class="control-label" for="tipo_usuario">Seleccione Tipo de Usuario</label>
+          <label class="control-label" for="tipo_usuario">Empresa para la que Trabaja</label>
           <br>
           <select name="tipo_usuario" class="custom-select custom-select-sm">
             <option selected>Seleccione la Empresa a la que Pertenece . . .</option>
@@ -80,11 +80,14 @@
           <table class="table table-dark table-striped table-bordered dt-responsive nowrap" style="width:100%">
             <thead>
               <tr>
-                <th class="table-dark" scope="col"><p>ID Usuario</p></th>
-                <th class="table-dark" scope="col"><p>Nombre Usuario</p></th>
-                <th class="table-dark" scope="col"><p>Contraseña Usuario</p></th>
-                <th class="table-dark" scope="col"><p>ID Tipo Usuario</p></th>
-                <th class="table-dark" scope="col"><p>ID Estado Usuario</p></th>
+                <th class="table-dark" scope="col"><p>ID Huesped</p></th>
+                <th class="table-dark" scope="col"><p>RUT Huesped</p></th>
+                <th class="table-dark" scope="col"><p>Nombre Huesped</p></th>
+                <th class="table-dark" scope="col"><p>Fecha Nacimiento</p></th>
+                <th class="table-dark" scope="col"><p>Telefono</p></th>
+                <th class="table-dark" scope="col"><p>Fecha Ingreso al Sistema</p></th>
+                <th class="table-dark" scope="col"><p>Empresa</p></th>
+                <th class="table-dark" scope="col"><p>Estado</p></th>
               </tr>
             </thead>
             {% for usu in usua %}

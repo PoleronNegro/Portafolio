@@ -16,5 +16,5 @@ urlpatterns = [
     path('Pedidos/',views.ModPedidos,name='Pedidos'),
     path('Contratos/',views.ModContratos,name='Contratos'),
     path('Proveedor/',views.Proveedor,name='Proveedor'),
-    path('Producto/',views.ModProducto,'Producto'),
+    path('Producto/',views.ModProducto,name='Producto'),
 ]
