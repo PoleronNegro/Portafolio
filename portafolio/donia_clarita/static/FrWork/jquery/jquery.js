@@ -1,1 +1,0 @@
-document.write("<script language='JAVASCRIPT' src='/FrWork/JQuery/jquery-1.8.2.js'></script> ");
